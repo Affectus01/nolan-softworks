@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+    font-family: Helvetica;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mobile-nav {
+    display: none !important;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    transition: .5s ease;
+    overflow: hidden;
+    z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#exit {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero-text-header {
+    font-size: 52px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
+    z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-text-body {
+    font-weight: 500;
+    z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-mobile-background {
+    background-image: url(Images/hero-image.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    display: none;
+    top: 0;
 }
+
+.background-overlay {
+    height: 600px;
+    opacity: 0.4;
+    z-index: 0;
+    background-color: #000000;
+}
+
+.upwork-hover:hover {
+    opacity: .8;
+}
+
+.footer {
+    bottom: 0;
+    z-index: 1;
+}
+
+.outline-light-text:hover {
+    color: #1C7BFF !important;
+}
+
+.seo-hero-image {
+    background-image: url(Images/seo-image.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 500px;
+    z-index: -1;
+}
+
+.seo-text {
+    z-index: 1;
+}
+
+.seo-background-overlay {
+    height: 500px;
+    opacity: 0.6;
+    z-index: 0;
+    background-color: #000000;
+    bottom: 0;
+}
+
+.footer-fix {
+    min-height: 94.3vh;
+}
+
+.about-indent {
+    text-indent: 50px;
+}
+
+.hero-video {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-section {
+    height: 600px;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width:320px) {
+    .mobile-nav, .hero-mobile-background {
+        display: block !important;
+    }
+
+    .desktop-nav, .hero-video {
+        display: none !important;
+    }
+}
+
+/* Small devices (phones, 320px - 470px) */
+@media only screen and (min-width:320px) and (max-width:470px) {
+    .mobile-nav, .hero-mobile-background {
+        display: block !important;
+    }
+
+    .desktop-nav, .hero-video {
+        display: none !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 470px - 768px) */
+@media only screen and (min-width:470px) and (max-width:768px) {
+    .mobile-nav, .hero-mobile-background {
+        display: block !important;
+    }
+
+    .desktop-nav, .hero-video {
+        display: none !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px - 992px) */
+@media only screen and (min-width:768px) and (max-width:992px) {
+    #mobile-navbar {
+        display: none !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+    #mobile-navbar {
+        display: none !important;
+    }
+} 
+
