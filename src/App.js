@@ -74,6 +74,7 @@ class App extends Component {
                             <a className="nav-item nav-link text-light p-2" target="_blank" href="https://github.com/Affectus01">Github</a>
                         </div>
                     </nav>
+                    <Home />
                     <footer className="navbar navbar-expand navbar-dark bg-dark justify-content-center position-absolute w-100 footer">
                         <p className="text-white m-0 p-2">@Copyright 2020 Nolan Softworks | Developed by <Link to="/" className="text-light nav-item nav-link d-inline pl-0 ml-0">Ben Nolan</Link></p>
                     </footer>
