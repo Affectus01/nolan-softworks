@@ -48,7 +48,7 @@ class App extends Component {
             <Router>
                 <div className="container-fluid p-0 position-relative">
                    <nav className="navbar navbar-expand navbar-dark bg-dark desktop-nav">
-                        <Link to="/nolan-softworks/" className="navbar-brand d-inline text-white border-right pr-4"><span>Nolan Softworks</span></Link>
+                        <Link to="/" className="navbar-brand d-inline text-white border-right pr-4"><span>Nolan Softworks</span></Link>
                         <Link to="/" className="nav-item nav-link d-inlne text-light p-2"><FontAwesomeIcon icon="home" size="lg" /></Link>
                         <Link to="/services" className="nav-item nav-link d-inline text-light p-2">Services</Link>
                         <Link to="/contact" className="nav-item nav-link d-inline text-light p-2">Contact</Link>
