@@ -48,34 +48,34 @@ class App extends Component {
             <Router>
                 <div className="container-fluid p-0 position-relative">
                    <nav className="navbar navbar-expand navbar-dark bg-dark desktop-nav">
-                        <a className="navbar-brand d-inline text-white border-right pr-4" href="/"><span>Nolan Softworks</span></a>
-                        <a className="nav-item nav-link d-inlne text-light p-2" href="/"><FontAwesomeIcon icon="home" size="lg"/></a>
-                        <a className="nav-item nav-link d-inline text-light p-2" href="/services">Services</a>
-                        <a className="nav-item nav-link d-inline text-light p-2" href="/contact">Contact</a>
-                        <a className="nav-item nav-link d-inline text-light p-2" href="/about">About</a>
+                        <Link to="/" className="navbar-brand d-inline text-white border-right pr-4"><span>Nolan Softworks</span></Link>
+                        <Link to="/" className="nav-item nav-link d-inlne text-light p-2"><FontAwesomeIcon icon="home" size="lg" /></Link>
+                        <Link to="/services" className="nav-item nav-link d-inline text-light p-2">Services</Link>
+                        <Link to="/contact" className="nav-item nav-link d-inline text-light p-2">Contact</Link>
+                        <Link to="/about" className="nav-item nav-link d-inline text-light p-2">About</Link>
                         <div className="ml-auto">
                             <a className="nav-item nav-link d-inline text-light p-2 upwork-hover" target="_blank" href="https://www.upwork.com/o/profiles/users/~01478845fa36b49363/"><img src={upwork} height="24px" width="24px"/></a>
                             <a className="nav-item nav-link d-inline text-light p-2" target="_blank" href="https://www.linkedin.com/in/benjiman-nolan"><FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" /></a>
                             <a className="nav-item nav-link d-inline text-light p-2" target="_blank" href="https://github.com/Affectus01"><FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a>
-                            <a className="nav-item nav-link d-inline text-light p-2" href="/contact"><FontAwesomeIcon icon="envelope" size="lg" /></a>
+                            <Link to="/" className="nav-item nav-link d-inline text-light p-2"><FontAwesomeIcon icon="envelope" size="lg" /></Link>
                         </div>
                     </nav>
                     <nav id="mobile-navbar" className="navbar navbar-expand navbar-dark bg-dark">
-                        <a className="navbar-brand d-inline text-white" href="/"><span>Nolan Softworks</span></a>
+                        <Link to="/" className="navbar-brand d-inline text-white"><span>Nolan Softworks</span></Link>
                         <a id="bars" className="ml-auto p-2" onClick={toggleNav}><FontAwesomeIcon icon="bars" size="lg" color="white" /></a>
                         <a id="exit" className="ml-auto p-2" onClick={toggleNav}><FontAwesomeIcon icon="times" size="lg" color="white" /></a>
                         <div id="mobile-menu" className="navbar-dark bg-dark mobile-nav text-center h4">
-                            <a className="nav-item nav-link text-light p-2" href="/">Home</a>
-                            <a className="nav-item nav-link text-light p-2" href="/services">Services</a>
-                            <a className="nav-item nav-link text-light p-2" href="/contact">Contact</a>
-                            <a className="nav-item nav-link text-light p-2" href="/about">About</a>
+                            <Link to="/" className="nav-item nav-link text-light p-2">Home</Link>
+                            <Link to="/services" className="nav-item nav-link text-light p-2">Services</Link>
+                            <Link to="/contact" className="nav-item nav-link text-light p-2">Contact</Link>
+                            <Link to="/about" className="nav-item nav-link text-light p-2">About</Link>
                             <a className="nav-item nav-link text-light p-2 upwork-hover" target="_blank" href="https://www.upwork.com/o/profiles/users/~01478845fa36b49363/">UpWork</a>
                             <a className="nav-item nav-link text-light p-2" target="_blank" href="https://www.linkedin.com/in/benjiman-nolan">LinkedIn</a>
                             <a className="nav-item nav-link text-light p-2" target="_blank" href="https://github.com/Affectus01">Github</a>
                         </div>
                     </nav>
                     <footer className="navbar navbar-expand navbar-dark bg-dark justify-content-center position-absolute w-100 footer">
-                        <p className="text-white m-0 p-2">@Copyright 2020 Nolan Softworks | Developed by <a className="text-light nav-item nav-link d-inline pl-0 ml-0" href="/about">Ben Nolan</a></p>
+                        <p className="text-white m-0 p-2">@Copyright 2020 Nolan Softworks | Developed by <Link to="/" className="text-light nav-item nav-link d-inline pl-0 ml-0">Ben Nolan</Link></p>
                     </footer>
                     <Route path="/" exact component={Home} />
                     <Route path="/services" component={Services} />
