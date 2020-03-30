@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -47,7 +47,7 @@ class App extends Component {
         return (
             <Router>
                 <div className="container-fluid p-0 position-relative">
-                   <nav className="navbar navbar-expand navbar-dark bg-dark desktop-nav">
+                    <nav className="navbar navbar-expand navbar-dark bg-dark desktop-nav">
                         <Link to="/" className="navbar-brand d-inline text-white border-right pr-4"><span>Nolan Softworks</span></Link>
                         <Link to="/" className="nav-item nav-link d-inlne text-light p-2"><FontAwesomeIcon icon="home" size="lg" /></Link>
                         <Link to="/services" className="nav-item nav-link d-inline text-light p-2">Services</Link>
@@ -77,11 +77,13 @@ class App extends Component {
                     <footer className="navbar navbar-expand navbar-dark bg-dark justify-content-center position-absolute w-100 footer">
                         <p className="text-white m-0 p-2">@Copyright 2020 Nolan Softworks | Developed by <Link to="/" className="text-light nav-item nav-link d-inline pl-0 ml-0">Ben Nolan</Link></p>
                     </footer>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/services" component={Services} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/about" component={About} />
-                    <Route path="/request-quote" component={RequestQuote} />
+                    <Switch>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/services" component={Services} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/about" component={About} />
+                        <Route path="/request-quote" component={RequestQuote} />
+                    </Switch>
                 </div>
             </Router>
         );
