@@ -38,7 +38,7 @@ export default class Home extends Component {
                             <FontAwesomeIcon icon="file-invoice-dollar" size="7x" color="gray" />
                             <h4 className="font-weight-bold pt-1">Request A Quote</h4>
                             <p>Need a website or application built?</p>
-                            <a href="/request-quote" className="btn btn-primary text-white rounded-pill px-4">Request Quote</a>
+                        <Link to={process.env.PUBLIC_URL + '/request-quote'} className="btn btn-primary text-white rounded-pill px-4">Request Quote</Link>
                     </div>
                     <div className="col-lg-4 text-center border-left border-right border-dark">
                         <FontAwesomeIcon icon="table" size="7x" color="gray" />
