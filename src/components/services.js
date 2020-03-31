@@ -27,7 +27,7 @@ export default class Services extends Component {
                                 I will be able to build out your website with any default or prebuilt custom template. If you would like to build a custom template then I will be able to work with
                                 you to get the design and layout you are looking for.</p>
                                 <p>If you are interested in a website, fill out a quote and I will get back to you as soon as possible.</p>
-                                <a href="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</a>
+                                <Link to="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</Link>
                             </div>
                         </div>
                         <div className="row d-none">
@@ -46,7 +46,7 @@ export default class Services extends Component {
                                     AWS for the database. I will charge you based off of the database storage that is used for your database structure. If you are wanting to make changes and updates to the
                                     application on a regular basis, I offer application management to help keep your application up to date.</p>
                                 <p>If you are interested in a desktop application, fill out a quote and I will get back to you as soon as possible.</p>
-                                <a href="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</a>
+                                <Link to="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</Link>
                             </div>
                             <div className="col-lg-6">
                                 <img className="m-auto d-block rounded" src={desktopApplications} alt="Desktop Applications" title="Desktop Applications" width="100%" height="100%" />
@@ -63,7 +63,7 @@ export default class Services extends Component {
                                     I can build your mobile application as a standalone or as a website companion app. I also offer mobile application management where I can manage and update your application if
                                     there are regular changes to be made. At this time, I am currently only accepting Android Mobile Application quotes.</p>
                                 <p>If you are interested in a mobile application, fill out a quote and I will get back to you as soon as possible</p>
-                                <a href="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</a>
+                                <Link to="/request-quote" className="btn btn-primary rounded-pill px-4">Submit Quote</Link>
                             </div>
                         </div>
                     </div>

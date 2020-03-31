@@ -93,8 +93,8 @@ export default class Contact extends Component {
                     </div>
                     <div className="col-lg-2 ml-1 border border-dark rounded p-5 bg-secondary text-white mt-5">
                         <h5>Related Links</h5>
-                        <a className="d-block text-light p-2" href="/request-quote"><FontAwesomeIcon icon="file-invoice-dollar" size="lg" /> Request Quote</a>
-                        <a className="d-block text-light p-2" href="/services"><FontAwesomeIcon icon="table" size="lg" /> Services</a>
+                        <Link className="d-block text-light p-2" to="/request-quote"><FontAwesomeIcon icon="file-invoice-dollar" size="lg" /> Request Quote</Link>
+                        <Link className="d-block text-light p-2" to="/services"><FontAwesomeIcon icon="table" size="lg" /> Services</Link>
                     </div>
                 </div>
             </div>

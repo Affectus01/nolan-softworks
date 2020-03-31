@@ -10,6 +10,7 @@ import upwork from '../Images/upwork.png'
 export default class About extends Component {
     render() {
         return (
+            <Router>
             <div className="container-fluid">
                 <div className="row justify-content-center align-items-start footer-fix">
                     <div className="col-lg-8 border border-dark rounded p-5 bg-secondary text-white mt-5">
@@ -29,17 +30,18 @@ export default class About extends Component {
                             I build my desktop applications with Java and JavaFX frameworks. I build my mobile applications on the Android platform.
                             I use MySQL for my databases which are then stored in the Amazon Web Services (AWS) Cloud Server.
                             I use AWS because it is reliable and scalable and offers a inexpensive way to run a database for my applications.</p>
-                        <p className="text-center">If you have any questions, comments, or feedback you can <a href="/contact">contact</a> me directly.</p>
+                        <p className="text-center">If you have any questions, comments, or feedback you can <Link to="/contact">contact</Link> me directly.</p>
                     </div>
                     <div className="col-lg-2 ml-1 border border-dark rounded p-5 bg-secondary text-white mt-5">
                         <h5>Related Links</h5>
                         <a className="d-block text-light p-2 upwork-hover" target="_blank" href="https://www.upwork.com/o/profiles/users/~01478845fa36b49363/"><img src={upwork} height="24px" width="24px" /> Upwork</a>
                         <a className="d-block text-light p-2" target="_blank" href="https://www.linkedin.com/in/benjiman-nolan"><FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" /> LinkedIn</a>
                         <a className="d-block text-light p-2" target="_blank" href="https://github.com/Affectus01"><FontAwesomeIcon icon={['fab', 'github']} size="lg" /> GitHub</a>
-                        <a className="d-block text-light p-2" href="/contact"><FontAwesomeIcon icon="envelope" size="lg" /> Contact</a>
+                        <Link className="d-block text-light p-2" to="/contact"><FontAwesomeIcon icon="envelope" size="lg" /> Contact</Link>
+                    </div>
                     </div>
                 </div>
-            </div>
+            </Router>
         );
     }
 }

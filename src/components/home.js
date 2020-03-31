@@ -38,19 +38,19 @@ export default class Home extends Component {
                             <FontAwesomeIcon icon="file-invoice-dollar" size="7x" color="gray" />
                             <h4 className="font-weight-bold pt-1">Request A Quote</h4>
                             <p>Need a website or application built?</p>
-                        <Link to={process.env.PUBLIC_URL + '/request-quote'} className="btn btn-primary text-white rounded-pill px-4">Request Quote</Link>
+                        <Link to="/request-quote" className="btn btn-primary text-white rounded-pill px-4">Request Quote</Link>
                     </div>
                     <div className="col-lg-4 text-center border-left border-right border-dark">
                         <FontAwesomeIcon icon="table" size="7x" color="gray" />
                         <h4 className="font-weight-bold">Services</h4>
                         <p>Want to learn more about what is offered?</p>
-                        <a href="/services" className="btn btn-primary text-white rounded-pill px-4">View Services</a>
+                        <Link to="/services" className="btn btn-primary text-white rounded-pill px-4">View Services</Link>
                     </div>
                     <div className="col-lg-4 text-center">
                         <FontAwesomeIcon icon="comment" size="7x" color="gray" />
                         <h4 className="font-weight-bold">Contact Us</h4>
                         <p>Have a general question or comment?</p>
-                        <a href="/contact" className="btn btn-primary text-white rounded-pill px-4">Contact</a>
+                        <Link to="/contact" className="btn btn-primary text-white rounded-pill px-4">Contact</Link>
                     </div>
                 </div>
                 <div className="row justify-content-center bg-primary py-5">
@@ -75,7 +75,7 @@ export default class Home extends Component {
                         <p className="p-0 m-0">Custom & WordPress Websites</p>
                         <p className="p-0 m-0">SEO & Social Media</p>
                         <p className="p-0 m-0">Website Management</p>
-                        <a href="/services#websites" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</a>
+                        <Link to="/services#websites" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</Link>
                     </div>
                 </div>
                 <div className="row justify-content-center bg-primary py-5 text-white">
@@ -99,7 +99,7 @@ export default class Home extends Component {
                         <p className="p-0 m-0">Custom Application</p>
                         <p className="p-0 m-0">Database Management</p>
                         <p className="p-0 m-0">Application Management</p>
-                        <a href="/services#applications" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</a>
+                        <Link to="/services#applications" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</Link>
                     </div>
                 </div>
                 <div className="row justify-content-center bg-primary py-5 text-white">
@@ -127,7 +127,7 @@ export default class Home extends Component {
                         <p className="p-0 m-0">Custom Mobile Application</p>
                         <p className="p-0 m-0">Database Management</p>
                         <p className="p-0 m-0">Application Management</p>
-                        <a href="/services#mobileApplications" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</a>
+                        <Link to="/services#mobileApplications" className="btn btn-outline-light rounded-pill px-4 outline-light-text mt-2">View Details</Link>
                     </div>
                 </div>
                 <div className="row justify-content-center align-items-center seo-hero-image text-white">
