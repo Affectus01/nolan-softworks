@@ -2,6 +2,10 @@
     font-family: Helvetica;
 }
 
+.row {
+    margin: 0 !important;
+}
+
 .mobile-nav {
     display: none !important;
     height: 100%;
@@ -31,10 +35,10 @@
 }
 
 .hero-mobile-background {
-    background-image: url(Images/hero-image.jpg);
-    background-attachment: fixed;
+    background-image: url(Images/hero-image-mobile.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center bottom;
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -67,9 +71,10 @@
     background-image: url(Images/seo-image.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center bottom;
     background-size: cover;
     height: 500px;
+    width: 100%;
     z-index: -1;
 }
 
@@ -102,6 +107,31 @@
     height: 600px;
 }
 
+.profile-pic {
+    width: 35%;
+}
+
+.website-background {
+    background-color: #002f62;
+    background-image: url(Images/vignette-overlay.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.application-background {
+    background-color: #007bff;
+    background-image: url(Images/vignette-overlay.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.mobile-app-background {
+    background-color: #00a6ff;
+    background-image: url(Images/vignette-overlay.png);
+    background-size: cover;
+    background-position: center center;
+}
+
 /* Media Queries */
 /* Extra small devices (phones, 320px and down) */
 @media only screen and (max-width:320px) {
@@ -111,6 +141,33 @@
 
     .desktop-nav, .hero-video {
         display: none !important;
+    }
+
+    .background-overlay {
+        opacity: 0.2;
+    }
+
+    .seo-hero-image {
+        background-image: url(Images/seo-image-mobile.jpg);
+        background-attachment: scroll;
+        height: 600px;
+    }
+
+    .seo-background-overlay {
+        height: 600px;
+        opacity: 0.3;
+    }
+
+    .btn-full-width-mobile {
+        width: 100%;
+    }
+
+    #websites, #applications, #mobileApplications {
+        padding: 1em 0 3em 0 !important;
+    }
+
+    .profile-pic {
+        width: 100%;
     }
 }
 
@@ -123,6 +180,33 @@
     .desktop-nav, .hero-video {
         display: none !important;
     }
+
+    .background-overlay {
+        opacity: 0.2;
+    }
+
+    .seo-hero-image {
+        background-image: url(Images/seo-image-mobile.jpg);
+        background-attachment: scroll;
+        height: 600px;
+    }
+
+    .seo-background-overlay {
+        height: 600px;
+        opacity: 0.3;
+    }
+
+    .btn-full-width-mobile {
+        width: 100%;
+    }
+
+    #websites, #applications, #mobileApplications {
+        padding: 1em 0 3em 0 !important;
+    }
+
+    .profile-pic {
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 470px - 768px) */
@@ -133,6 +217,33 @@
 
     .desktop-nav, .hero-video {
         display: none !important;
+    }
+
+    .background-overlay {
+        opacity: 0.2;
+    }
+
+    .seo-hero-image {
+        background-image: url(Images/seo-image-mobile.jpg);
+        background-attachment: scroll;
+        height: 600px;
+    }
+
+    .seo-background-overlay {
+        height: 600px;
+        opacity: 0.3;
+    }
+
+    .btn-full-width-mobile {
+        width: 100%;
+    }
+
+    #websites, #applications, #mobileApplications {
+        padding: 1em 0 3em 0 !important;
+    }
+
+    .profile-pic {
+        width: 100%;
     }
 }
 
