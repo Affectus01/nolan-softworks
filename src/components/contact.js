@@ -3,7 +3,6 @@ import '../App.css';
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
 
 export default class Contact extends Component {
     constructor(props) {
@@ -33,22 +32,40 @@ export default class Contact extends Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(this.state)
-        axios({
-            method: "POST",
-            url: "http://localhost:3002/contact",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                this.resetForm()
-                this.setState({
-                    mailSent: true
-                })
-            } else if (response.data.status === 'fail') {
-                this.setState({
-                    error: true
-                })
-            }
-        })
+        const sgMail = require('@sendgrid/mail');
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        var fname = this.state.fname;
+        var lname = this.state.lname;
+        var phone = this.state.phone;
+        var email = this.state.email;
+        var commentsQuestions = this.state.commentsQuestions;
+        var content = `First Name: ${fname}\nLast Name: ${lname}\nPhone: ${phone}\nE-mail: ${email}\nComment & Questions: ${commentsQuestions} `
+        const msg = {
+            to: 'benjiman.nolan1@gmail.com',
+            from: this.state.email,
+            subject: 'New Contact Form',
+            text: content
+        };
+
+        sgMail
+            .send(msg, (error, result) => {
+                if (error) {
+                    console.error(error);
+                    if (error.response) {
+                        console.error(error.response.body)
+                    }
+
+                    this.setState({
+                        error: true
+                    })
+                }
+                else {
+                    this.resetForm()
+                    this.setState({
+                        mailSent: true
+                    })
+                }
+            });
     }
 
     resetForm() {

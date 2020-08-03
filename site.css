@@ -1,0 +1,1199 @@
+/* Global CSS */
+body,html {
+    margin: 0;
+    font-family: Helvetica;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.footerFix {
+     margin-bottom: 130px;
+}
+
+.slideshowContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshowSlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideCaption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideNumber {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #485563;
+    background: linear-gradient(to top, #485563, #29323c);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.title {
+    position: relative;
+    left: 50px;
+    border-right: 1px solid black;
+    padding: 0 15px 0 0;
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight: 100;
+    margin: 0;
+    color: white;
+    z-index: 1;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: white;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+#mobile-menu-left {
+    display: none;
+}
+
+/* Navigation */
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    z-index: 1;
+}
+
+.nav-ul {
+    list-style-type: none;
+}
+
+.nav-li-item {
+    padding: 0 5px 0 5px;
+}
+
+.nav-li-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.nav-li-item a:hover {
+    color: #1ca6ee;
+}
+
+/* Social Navigation */
+.social-nav-container {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.social-nav {
+    list-style-type: none;
+}
+
+.social-nav-item {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+.social-nav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.social-nav-item a:hover {
+    color: #1ca6ee;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 75px;
+    background-color: #485563;
+    background: linear-gradient(to bottom, #485563, #29323c);  
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    top: 20px;
+    position: relative;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #adb5bd;
+}
+
+.footer a:hover {
+    color: #1ca6ee;
+}
+
+/* Home Page */
+.heroOverlay {
+    position: absolute;
+    width: 100%;
+    height: 615px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.heroImage {
+    width: 100%;
+    height: 615px;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/royals.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroText {
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+}
+
+.contentWrapper {
+    top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.CTASection {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.contentCTA {
+    display: inline-block;
+    width: 33%;
+    color: #adb5bd;
+}
+
+.CTASection p, .CTASection h2 {
+    line-height: 10px;
+    color: black;
+}
+
+.contentCTA a {
+    background-color: #1ca6ee;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.contentCTA a:hover {
+    background-color: white;
+    color: #1ca6ee;
+    border-color: #1ca6ee;
+}
+
+.contentCTA:nth-child(2)  {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.websiteSection {
+    padding: 0;
+    margin: 0;
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to top, #0C4889, #1ca6ee);
+}
+
+.websiteSection li, .websiteSection ul, .websiteSectionContent h1 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.websiteSectionContent {
+    color: white;
+    position: relative;
+    top: 37%;
+}
+
+.websiteSectionContent a {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.websiteSectionContent a:hover {
+    background-color: white;
+    color: #1ca6ee;
+}
+
+.applicationSection {
+    padding: 0;
+    margin: 0;
+    height: 800px;
+    width: 100%;
+    background-color: #0C4889;
+}
+
+.applicationSection li, .applicationSection ul, .applicationSectionContent h1 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.applicationSectionContent {
+    color: white;
+    position: relative;
+    top: 37%;
+}
+
+.applicationSectionContent a {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.applicationSectionContent a:hover {
+    background-color: white;
+    color: #1ca6ee;
+}
+
+.mobileApplicationSection {
+    padding: 0;
+    margin: 0;
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(to bottom, #0C4889, #1ca6ee);
+}
+
+.mobileApplicationSection li, .mobileApplicationSection ul, .mobileApplicationSectionContent h1 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.mobileApplicationSectionContent {
+    color: white;
+    position: relative;
+    top: 37%;
+}
+
+.mobileApplicationSectionContent a {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.mobileApplicationSectionContent a:hover {
+    background-color: white;
+    color: #1ca6ee;
+}
+
+.featureIcons {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+}
+
+.homeSeoText {
+    width: 100%;
+    height: 615px;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/royals.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeSeoContent {
+    width: 60%;
+    position: absolute;
+    bottom: 300px;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    left: 50%;
+    margin-left: -30%;
+}
+
+.seoOverlay {
+    position: absolute;
+    width: 100%;
+    height: 615px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Products Page */
+.productsTitle {
+    margin: 0;
+    padding-top: 30px;
+}
+
+div#productsContentWrapper {
+    background: linear-gradient(to bottom, #1ca6ee, #0C4889, #1ca6ee);
+}
+
+.productContainer {
+    width: 100%;
+    height: 1000px;
+}
+
+.productContainerContent {
+    position: relative;
+    top: 25%;
+}
+
+.productContainerContent h1 {
+    margin-top: 0;
+    color: white;
+}
+
+.productContainerContent a {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.productContainerContent a:hover {
+    background-color: white;
+    color: #1ca6ee;
+}
+
+.productsPricing {
+    display: inline-table;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.productsPricing ul {
+    list-style-type: none;
+    width: auto;
+    display: inline-table;
+    text-align: left;
+    padding: 0;
+    margin: 0 25px 0 25px;
+}
+
+/* Projects Page */
+.projectSections1 {
+    background-image: url("Images/IMS-MainScreen.png");
+}
+
+.projectSections2 {
+    background-image: url("Images/AS-AppointmentScreen.png");
+}
+
+.projectSections3 {
+    background-image: url("Images/DSO-MainScript.PNG");
+}
+
+.projectSections4 {
+    background-image: url("Images/UCA-MainScreen.png");
+}
+
+.projectsContent div {
+    width: 24%;
+    height: 300px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40%;
+}
+
+.projectsContent div:hover {
+    border-radius: 0;
+    transform: scale(.9);
+    transition: 1.5s ease-in-out;
+}
+
+.projectsContent h3 {
+    display: inline-block;
+    width: 24%;
+}
+
+.mobileProjectsContent {
+    display: none;
+}
+
+/* Contact Page */
+.contactForm {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.contactFormInput {
+    display: block;
+    width: 100%;
+    height: 39px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #b3b4b7;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+.contactFormButton {
+    background-color: #0d65bf;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: white;
+}
+.contactFormButton:hover {
+    background-color: #fff;
+    color: #0d65bf;
+    border: 1px solid #0d65bf;
+    cursor: pointer;
+}
+
+/* Android/iOS Mobile Application Form Pages */
+.productsSections {
+    display: inline-table;
+    text-align: left;
+    padding: 0 25px 10px 25px;
+    margin: 0;
+}
+
+.productsSections h4 {
+    margin: 0 0 10px 0;
+}
+
+.contactForm p {
+    margin: 0;
+}
+
+/* About Page */
+.aboutContent {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    font-size: 18px;
+}
+
+/* Inventory Management System Page */
+.inventoryContent{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Appointment Scheduler Page */
+.appointmentContent{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Donut Shop Order Page */
+.donutContent{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.donutContent table {
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: inline-table;
+}
+
+.donutContent th, .donutContent td {
+    padding: 0;
+    border: 1px solid black;
+}
+
+.donutContent h4 {
+    text-align: center;
+}
+
+td.primary {
+    text-decoration: underline;
+}
+
+.donutContent img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+}
+
+.tableSection1 {
+    display: inline-table;
+    width: 20%;
+    text-align: center;
+}
+
+.tableSection2 {
+    display: inline-table;
+    width: 75%;
+    text-align: center;
+}
+
+.tableSection3 {
+    text-align: center;
+}
+
+/* University Companion App Page */
+.universityContent{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Sitemap Page */
+.sitemapContent {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Privacy Page */
+
+/* 404 Error Page */
+.oopsContent {
+    position: relative;
+    top: 200px;
+}
+
+a[title='Hosted on free web hosting 000webhost.com. Host your own website for FREE.'] {
+    display: none;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width:320px) {
+    .mobile-menu {
+        display: inline-block;
+    }
+    .social-nav-container {
+        display: none;
+    }
+    .nav-container {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        left: 0;
+        top: 50px;
+        transition: .5s ease;
+        overflow-x: hidden;
+    }
+    .nav-ul {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-li-item {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid gray;
+    }
+    .title {
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 16px;
+        text-align: right;
+        font-size: 18px;
+    }
+    .heroText {
+        font-size: 18px;
+        word-wrap: normal;
+        top: 100px;
+    }
+
+    .heroImage {
+        height: 400px;
+    }
+    .heroOverlay {
+        height: 400px;
+    }
+    .contentCTA {
+        width: 100%;
+    }
+    .contentCTA:nth-child(2) {
+        border: none;
+    }
+    .websiteSection {
+        height: 697px;
+    }
+    .websiteSectionContent {
+        top: 0;
+    }
+    .applicationSection {
+        height: 563px;
+    }
+    .applicationSectionContent {
+        top: 0;
+    }.mobileApplicationSection {
+        height: 721px;
+    }
+    .mobileApplicationSectionContent {
+        top: 0;
+    }
+    .homeSeoContent {
+        width: 100%;
+        margin-left: -50%;
+        bottom: 150px;
+    }
+    .footer p {
+        top: 6px;
+    }
+    .contactForm {
+    width: 80%;
+    margin: 0 0 0 5px;
+    }
+    .productContainer {
+        height: auto;
+        margin-bottom: 130px;
+    }
+    .productsPricing {
+        padding: 0;
+        width: 100%;
+    }
+    .productsPricing ul {
+        margin: 0;
+    }
+    .projectsContent {
+        display: none;
+    }
+    .mobileProjectsContent {
+        display: block;
+    }
+
+    .mobileProjectsContent a {
+        display: block;
+        background-color: #0d65bf;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-family: Helvetica;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 10px;
+    }
+} 
+
+/* Small devices (phones, 320px - 470px) */
+@media only screen and (min-width:320px) and (max-width:470px) {
+    .mobile-menu {
+        display: inline-block;
+    }
+    #mobile-menu-left {
+        display: none;
+    }
+    .nav-container {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        left: 0;
+        top: 50px;
+        transition: 0.5s ease;
+        overflow-x: hidden;
+    }
+    .nav-ul {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-li-item {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid gray;
+    }
+    .social-nav-container {
+        display: none;
+    }
+    .title {
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        text-align: right;
+    }
+        .heroText {
+        font-size: 18px;
+        word-wrap: normal;
+        top: 100px;
+    }
+
+    .heroImage {
+        height: 400px;
+    }
+    .heroOverlay {
+        height: 400px;
+    }
+    .contentCTA {
+        width: 100%;
+    }
+    .contentCTA:nth-child(2) {
+        border: none;
+    }
+    .websiteSection {
+        height: 600px;
+    }
+    .websiteSectionContent {
+        top: 0;
+    }
+    .applicationSection {
+        height: 600px;
+    }
+    .applicationSectionContent {
+        top: 0;
+    }.mobileApplicationSection {
+        height: 600px;
+    }
+    .mobileApplicationSectionContent {
+        top: 0;
+    }
+    .homeSeoContent {
+        width: 100%;
+        margin-left: -50%;
+        bottom: 200px;
+    }
+    .footer p {
+        top: 6px;
+    }
+    .contactForm {
+    width: 80%;
+    margin: 0 0 0 24px;
+    font-size: 16px;
+    }
+    .productContainer {
+        height: auto;
+        margin-bottom: 130px;
+    }
+    .productsPricing {
+        padding: 0;
+        width: 100%;
+    }
+    .productsPricing ul {
+        margin: 0 0 0 7px;
+    }
+    .projectsContent {
+        display: none;
+    }
+    .mobileProjectsContent {
+        display: block;
+    }
+
+    .mobileProjectsContent a {
+        display: block;
+        background-color: #0d65bf;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-family: Helvetica;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 10px;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 470px - 768px) */
+@media only screen and (min-width:470px) and (max-width:768px) {
+    .mobile-menu {
+        display: inline-block;
+    }
+    #mobile-menu-left {
+        display: none;
+    }
+    .nav-container {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        left: 0;
+        top: 50px;
+        transition: 0.5s ease;
+        overflow-x: hidden;
+    }
+    .nav-ul {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-li-item {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid gray;
+    }
+    .title {
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        text-align: center;
+    }
+    .heroText {
+        font-size: 18px;
+        word-wrap: normal;
+        top: 100px;
+    }
+
+    .heroImage {
+        height: 400px;
+    }
+    .heroOverlay {
+        height: 400px;
+    }
+    .contentCTA {
+        width: 100%;
+    }
+    .contentCTA:nth-child(2) {
+        border: none;
+    }
+    .websiteSection {
+        height: 600px;
+    }
+    .websiteSectionContent {
+        top: 0;
+    }
+    .applicationSection {
+        height: 600px;
+    }
+    .applicationSectionContent {
+        top: 0;
+    }.mobileApplicationSection {
+        height: 600px;
+    }
+    .mobileApplicationSectionContent {
+        top: 0;
+    }
+    .homeSeoContent {
+        width: 100%;
+        margin-left: -50%;
+        bottom: 225px;
+    }
+    .footer p {
+        top: 15px;
+    }
+    .contactForm {
+    width: 80%;
+    margin: 0 0 0 45px;
+    font-size: 16px;
+    }
+    .productContainer {
+        height: auto;
+        margin-bottom: 130px;
+    }
+    .productsPricing {
+        padding: 0;
+        width: 100%;
+    }
+    .productsPricing ul {
+        margin: 0 7px 0 7px;
+    }
+    .projectsContent {
+        display: none;
+    }
+    .mobileProjectsContent {
+        display: block;
+    }
+
+    .mobileProjectsContent a {
+        display: block;
+        background-color: #0d65bf;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-family: Helvetica;
+        font-size: 18px;
+        color: white;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px - 992px) */
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .mobile-menu {
+        display: inline-block;
+    }
+    #mobile-menu-left {
+        display: none;
+    }
+    .nav-container {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        background-color: black;
+        left: 0;
+        top: 50px;
+        transition: 0.5s ease;
+        overflow-x: hidden;
+    }
+    .nav-ul {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-li-item {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid gray;
+    }
+    .title {
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        text-align: center;
+    }
+    .heroText {
+        font-size: 18px;
+        word-wrap: normal;
+        top: 100px;
+    }
+
+    .heroImage {
+        height: 400px;
+    }
+    .heroOverlay {
+        height: 400px;
+    }
+    .contentCTA {
+        width: 100%;
+    }
+    .contentCTA:nth-child(2) {
+        border: none;
+    }
+    .websiteSection {
+        height: 600px;
+    }
+    .websiteSectionContent {
+        top: 0;
+    }
+    .applicationSection {
+        height: 600px;
+    }
+    .applicationSectionContent {
+        top: 0;
+    }.mobileApplicationSection {
+        height: 600px;
+    }
+    .mobileApplicationSectionContent {
+        top: 0;
+    }
+    .homeSeoContent {
+        width: 100%;
+        margin-left: -50%;
+        bottom: 275px;
+    }
+    .footer p {
+        top: 15px;
+    }
+    .contactForm {
+    width: 80%;
+    }
+    .productContainer {
+        height: auto;
+        margin-bottom: 130px;
+    }
+    .productsPricing {
+        padding: 0;
+        width: 100%;
+    }
+    .productsPricing ul {
+        margin: 0 15 0 15px;
+    }
+    .projectsContent {
+        display: none;
+    }
+    .mobileProjectsContent {
+        display: block;
+    }
+
+    .mobileProjectsContent a {
+        display: block;
+        background-color: #0d65bf;
+        padding: 10px 20px 10px 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        font-family: Helvetica;
+        font-size: 18px;
+        color: white;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+    .mobile-menu {
+        display: none;
+    }
+    .nav-container {
+        padding-left: 10px;
+    }
+    .nav-li-item {
+        display: inline-block;
+    }
+    .title {
+        top: 10px;
+        position: absolute;
+    }
+} 
+

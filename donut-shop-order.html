@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P2GTZ6W');</script>
+	<!-- End Google Tag Manager -->
+    <title>Ben Nolan | Donut Shop Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Nolan">
+    <meta name="description" content="Designing and Developing Websites, Desktop, and Mobile Applications for personal or company use.">
+    <meta name="google-site-verification" content="hSNvnLnn4oHrCpRWZfdIhLnGli7FMk2LEeVuwgOowqM" />
+    <link rel="canonical" href="http://www.bennolan.me/donut-shop-order.html" />
+    <link rel="shortcut icon" href="Images/CodeFavicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 0px)" href="site.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.css">
+    <script src="scripts.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106143629-1"></script>
+	<script>
+	  	window.dataLayer = window.dataLayer || [];
+	  	function gtag(){dataLayer.push(arguments);}
+	  	gtag('js', new Date());
+		gtag('config', 'UA-106143629-1');
+	</script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2GTZ6W"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrapper">
+	    <div class="header">
+	    	<div class="mobile-menu">
+	    		<i id="mobile-menu-left" class="fa fa-caret-left fa-2x" onClick="toggleNav()"></i>
+	    		<i id="mobile-menu" class="fa fa-bars fa-2x" onClick="toggleNav()"></i>
+		    </div>
+		    <a href="/index.html"><h1 class="title">Ben Nolan's Portfolio</h1></a>
+	    	<div id="navSide" class="nav-container">
+		        <ul class="nav-ul">
+		        	<li class="nav-li-item"><a href="/index.html"><i class="fa fa-home fa-lg"></i></a></li>
+		        	<li class="nav-li-item"><a href="/products.html">Products</a></li>
+		            <li class="nav-li-item"><a href="/projects.html">Projects</a></li>
+		            <li class="nav-li-item"><a href="/contact.html">Contact</a></li>
+		            <li class="nav-li-item"><a href="/about.html">About</a></li>
+		        </ul>
+	    	</div>
+		    <div class="social-nav-container">
+		    	<ul class="social-nav">
+		    		<li class="social-nav-item"><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+		    		<li class="social-nav-item"><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+		    		<li class="social-nav-item"><a href="/contact.html"><i class="fa fa-envelope fa-lg"></i></a></li>
+		    	</ul>
+		    </div>
+		</div>
+
+		<div class="contentWrapper">
+			<h1>Donut Shop Order</h1>
+			<div class="donutContent">
+				<h3>Objective:</h3>
+				<p>A donut shop wants to create a smartphone application where customers can order donuts. First, I designed a normalized entity-relationship (E-R) logical database model to store data related to the customer, donuts, and donut order. Next, I created four tables with primary and foreign keys that are derived from the E-R model. I then created views and indexes to protect and fine-tune query performance. I populated each of the tables with data. Finally, I created both a simple “select-from-where” (sfw) query and a complex join query to produce meaningful reports on individual donut orders and summaries to determine which donuts sell the best.</p>
+				<h4 style="width: 20%;display: inline-block;">1<sup>st</sup> Normal Form</h4>
+				<h4 style="width: 75%;display: inline-block;">2<sup>nd</sup> Normal Form</h4>
+				<div class="tableSection1">
+					<table>
+						<tbody>
+							<tr>
+								<th>Donut Order</th>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK DonutOrderID</strong></td>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK DonutID</strong></td>
+							</tr>
+							<tr>
+								<td>CustomerID</td>
+							</tr>
+							<tr>
+								<td>FirstName</td>
+							</tr>
+							<tr>
+								<td>LastName</td>
+							</tr>
+							<tr>
+								<td>StreetAddress</td>
+							</tr>
+							<tr>
+								<td>Apt</td>
+							</tr>
+							<tr>
+								<td>City</td>
+							</tr>
+							<tr>
+								<td>State</td>
+							</tr>
+							<tr>
+								<td>ZipCode</td>
+							</tr>
+							<tr>
+								<td>HomePhone</td>
+							</tr>
+							<tr>
+								<td>MobilePhone</td>
+							</tr>
+							<tr>
+								<td>OtherPhone</td>
+							</tr>
+							<tr>
+								<td>OrderDate</td>
+							</tr>
+							<tr>
+								<td>SpecialHandlingNotes</td>
+							</tr>
+							<tr>
+								<td>DonutName</td>
+							</tr>
+							<tr>
+								<td>DonutDescription</td>
+							</tr>
+							<tr>
+								<td>UnitPrice</td>
+							</tr>
+							<tr>
+								<td>OrderQty</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<div class="tableSection2">
+					<table>
+						<tbody>
+							<tr>
+								<th>Donut Order</th>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK DonutOrderID</strong></td>
+							</tr>
+							<tr>
+								<td>CustomerID</td>
+							</tr>
+							<tr>
+								<td>FirstName</td>
+							</tr>
+							<tr>
+								<td>LastName</td>
+							</tr>
+							<tr>
+								<td>StreetAddress</td>
+							</tr>
+							<tr>
+								<td>Apt</td>
+							</tr>
+							<tr>
+								<td>City</td>
+							</tr>
+							<tr>
+								<td>State</td>
+							</tr>
+							<tr>
+								<td>ZipCode</td>
+							</tr>
+							<tr>
+								<td>HomePhone</td>
+							</tr>
+							<tr>
+								<td>MobilePhone</td>
+							</tr>
+							<tr>
+								<td>OtherPhone</td>
+							</tr>
+							<tr>
+								<td>OrderDate</td>
+							</tr>
+							<tr>
+								<td>SpecialHandlingNotes</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<tbody>
+							<tr>
+								<th><strong>Order Line Item</strong></th>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK FK DonutOrderID</strong></td>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK FK DonutID</strong></td>
+							</tr>
+							<tr>
+								<td>OrderQty</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<tbody>
+							<tr>
+								<th><strong>Donut</strong></th>
+							</tr>
+							<tr>
+								<td class="primary"><strong>PK DonutID</strong></td>
+							</tr>
+							<tr>
+								<td>DonutName</td>
+							</tr>
+							<tr>
+								<td>DonutDescription</td>
+							</tr>
+							<tr>
+								<td>UnitPrice</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<h4>3<sup>rd</sup> Normal Form</h4>
+				<div class="tableSection3">
+				<table>
+					<tbody>
+						<tr>
+							<th><strong>Customer</strong></th>
+						</tr>
+						<tr>
+							<td class="primary"><strong>PK Customer</strong></td>
+						</tr>
+						<tr>
+							<td>FirstName</td>
+						</tr>
+						<tr>
+							<td>LastName</td>
+						</tr>
+						<tr>
+							<td>StreetAddress</td>
+						</tr>
+						<tr>
+							<td>Apt</td>
+						</tr>
+						<tr>
+							<td>City</td>
+						</tr>
+						<tr>
+							<td>State</td>
+						</tr>
+						<tr>
+							<td>ZipCode</td>
+						</tr>
+						<tr>
+							<td>HomePhone</td>
+						</tr>
+						<tr>
+							<td>MobilePhone</td>
+						</tr>
+						<tr>
+							<td>OtherPhone</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<th><strong>Donut Order</strong></th>
+						</tr>
+						<tr>
+							<td class="primary"><strong>PK DonutOrderID</strong></td>
+						</tr>
+						<tr>
+							<td class="primary"><strong>FK CustomerID</strong></td>
+						</tr>
+						<tr>
+							<td>OrderDate</td>
+						</tr>
+						<tr>
+							<td>SpecialHandlingNotes</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<th><strong>Order Line Item</strong></th>
+						</tr>
+						<tr>
+							<td class="primary"><strong>PK FK DonutOrderID</strong></td>
+						</tr>
+						<tr>
+							<td class="primary"><strong>PK FK DonutID</strong></td>
+						</tr>
+						<tr>
+							<td>OrderQty</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<th><strong>Donut</strong></th>
+						</tr>
+						<tr>
+							<td class="primary"><strong>PK DonutID</strong></td>
+						</tr>
+						<tr>
+							<td>DonutName</td>
+						</tr>
+						<tr>
+							<td>DonutDescription</td>
+						</tr>
+						<tr>
+							<td>UnitPrice</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				<h4>Entity Relationship Diagram(ERD)</h4>
+				<img src="Images/DSO-EntityRelationship.png" />
+				<h4>Creating Tables</h4>
+					<code>
+						CREATE TABLE Donut ( DonutID INTEGER NOT NULL AUTO_INCREMENT,<br>
+						DonutName VARCHAR(25) NOT NULL,<br> 
+						DonutDescription VARCHAR(35) NOT NULL,<br>
+						UnitPrice DECIMAL(4,2) NOT NULL,<br>
+						PRIMARY KEY (DonutID));<br>
+					</code><br>
+					<code>
+						CREATE TABLE Customer ( CustomerID INTEGER NOT NULL AUTO_INCREMENT,<br>
+						FirstName VARCHAR(25) NOT NULL,<br>
+						LastName VARCHAR(25) NOT NULL,<br>
+						StreetAddress VARCHAR(35) NOT NULL,<br>
+						Apt INTEGER,<br>
+						City VARCHAR(25) NOT NULL,<br>
+						State CHAR(2) NOT NULL,<br>
+						ZipCode CHAR(5) NOT NULL,<br>
+						HomePhone VARCHAR(12) NOT NULL,<br>
+						MobilePhone VARCHAR(12) NOT NULL,<br>
+						OtherPhone VARCHAR(12) NO NULL,<br>
+						PRIMARY KEY (CustomerID));<br>
+					</code><br>
+					<code>
+						CREATE TABLE DonutOrder (
+						DonutOrderID INTEGER NOT NULL AUTO_INCREMENT,<br>
+						CustomerID INTEGER NOT NULL,<br>
+						OrderDate VARCHAR(11) NOT NULL,<br>
+						SpecialHandlingNotes VARCHAR(50),<br>
+						PRIMARY KEY (DonutOrderID),<br>
+						FOREIGN KEY (CustomerID) REFERENCES Customer (CustomerID));<br>
+					</code><br>
+					<code>
+						CREATE TABLE OrderLineItem (
+						DonutOrderID INTEGER NOT NULL,<br>
+						DonutID INTEGER NOT NULL,<br>
+						OrderQty INTEGER, <br>
+						CONSTRAINT FK_DonutID FOREIGN KEY (DonutID) REFERENCES Donut (DonutID),<br>
+						CONSTRAINT FK_DonutOrderID FOREIGN KEY (DonutOrderID) REFERENCES DonutOrder (DonutOrderID),<br>
+						PRIMARY KEY (DonutOrderID, DonutID));<br>
+					</code><br>
+				<h4>Creating A View</h4>
+						<code>
+							CREATE VIEW CustomerInfo
+							AS SELECT CustomerID, CONCAT(FirstName, ' ', LastName) AS CustomerName, StreetAddress, Apt, City, State, ZipCode, HomePhone, MobilePhone, 
+							OtherPhone<br>
+							FROM Customer;<br>
+						</code><br>
+				<h4>Creating An Index</h4>
+						<code>
+							CREATE INDEX DonutNameX ON Donut(DonutName);<br>
+						</code><br>
+				<h4>Inserting Data</h4>
+						<code>
+							INSERT INTO Customer (CustomerID, FirstName, LastName, StreetAddress, Apt, City, State, ZipCode, HomePhone, MobilePhone, OtherPhone)<br>
+							VALUES (1, 'Ben', 'Nolan', '111 Rost St.', 4, 'Leavenworth', 'KS', '66111', '111-111-1111', '111-111-1112', '222-222-2222');<br>
+						</code><br>
+						<code>
+							INSERT INTO Donut (DonutID, DonutName, DonutDescription, UnitPrice) VALUES<br>
+							(1, 'Plain', 'Plain Donut', 1.50),<br>
+							(2, 'Glazed', 'Glazed Donut', 1.75),<br>
+							(3, 'Cinnamon', 'Cinnamon Donut', 1.75),<br>
+							(4, 'Chocolate', 'Chocolate Donut', 1.75),<br>
+							(5, 'Sprinkle', 'Sprinkle Donut', 1.75),<br>
+							(6, 'Gluten-Free', 'Gluten-Free Donut', 1.50);<br>
+						</code><br>
+						<code>
+							INSERT INTO DonutOrder (DonutOrderID, CustomerID, OrderDate, SpecialHandlingNotes)<br>
+							VALUES (1, 1, 'May 6, 2014, 'Please include plates and napkins');<br>
+						</code><br>
+						<code>
+							INSERT INTO OrderLineItem (DonutOrderID, DonutID, OrderQty) VALUES<br>
+							(1, 1, 1),<br>
+							(1, 2, 5),<br>
+							(1, 3, 12),<br>
+							(1, 4, 3),<br>
+							(1, 5, 4),<br>
+							(1, 6, 5);<br>
+						</code>
+				<h4>Running Queries</h4>
+						<code>
+							SELECT *<br>
+							FROM Donut;<br>
+						</code><br>
+						<div>
+							<img src="Images/DSO-DonutQuery.png"> 
+						</div>
+						<code>
+							SELECT *<br>
+							FROM Customer;<br>
+						</code><br> 
+						<img src="Images/DSO-CustomerQuery.png"> 
+						<code>
+							SELECT *<br>
+							FROM DonutOrder;<br>
+						</code><br>
+						<img src="Images/DSO-DonutOrderQuery.png"> 
+						<code>
+							SELECT *<br>
+							FROM OrderLineItem;<br>
+						</code><br>
+						<img src="Images/DSO-OrderLineItemQuery.png"> 
+						<code>
+							SELECT DonutOrder.OrderDate, DonutOrder.DonutOrderID, OrderLineItem.OrderQty, Donut.DonutID, Donut.DonutName, Donut.DonutDescription, 
+							Donut.UnitPrice, DonutOrder.SpecialHandlingNotes, Customer.CustomerID, Customer.FirstName, Customer.LastName, 
+							Customer.StreetAddress, Customer.Apt, Customer.City, Customer.State, Customer.ZipCode, Customer.HomePhone, 
+							Customer.MobilePhone, Customer.OtherPhone<br>
+							FROM Customer INNER JOIN DonutOrder LEFT JOIN OrderLineItem ON Customer.CustomerID = DonutOrder.CustomerID AND 
+							DonutOrder.DonutOrderID = OrderLineItem.DonutOrderID LEFT JOIN Donut ON OrderLineItem.DonutID = Donut.DonutID;<br>
+						</code><br>
+						<img style="margin-bottom: 126px;" src="Images/DSO-JoinQuery.png">
+			</div>
+		</div>
+
+	    <div class="footer">
+	        <p>@ Copyright 2019 Ben Nolan's Profile | Developed by <a href="/about.html">Ben Nolan</a></p>
+	    </div>
+	</div>
+</body>
+</html>
