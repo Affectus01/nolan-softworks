@@ -33,7 +33,8 @@ export default class Contact extends Component {
         e.preventDefault();
         console.log(this.state)
         const sgMail = require('@sendgrid/mail');
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+        sgMail.setApiKey(SENDGRID_API_KEY);
         var fname = this.state.fname;
         var lname = this.state.lname;
         var phone = this.state.phone;
