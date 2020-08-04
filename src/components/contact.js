@@ -3,6 +3,7 @@ import '../App.css';
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+require('dotenv').config();
 
 export default class Contact extends Component {
     constructor(props) {
