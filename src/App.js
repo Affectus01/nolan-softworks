@@ -20,6 +20,7 @@ import {
   faCode,
   faBars,
   faTimes,
+  faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import upwork from "./Images/upwork.png";
 
@@ -43,7 +44,8 @@ library.add(
   faDraftingCompass,
   faCode,
   faBars,
-  faTimes
+  faTimes,
+  faPhoneAlt
 );
 
 class App extends Component {
@@ -122,6 +124,12 @@ class App extends Component {
             >
               <FontAwesomeIcon icon="envelope" size="lg" />
             </Link>
+            <a
+              href="tel:+3167060994"
+              className="nav-item nav-link d-inline text-light p-2"
+            >
+              <FontAwesomeIcon icon="phone-alt" size="lg" />
+            </a>
           </div>
         </nav>
         <nav

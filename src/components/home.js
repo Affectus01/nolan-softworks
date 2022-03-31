@@ -222,15 +222,15 @@ export default class Home extends Component {
           <div className="col-10 text-center seo-text">
             <h2 className="font-weight-bold">Welcome to Nolan Softworks</h2>
             <p>
-              I am a software developer that serves the Leavenworth, Lansing,
-              and Kansas City area. I design and develop websites, desktop
-              applications, and mobile applications. My focus is to research a
-              customers' needs and requirements. The research will help me
-              design a mockup that is user friendly for the consumer. I utilize
-              the findings from the research and design phases for the
-              production of specific products including materials, systems, and
-              methods. The research and designs will help me produce user
-              friendly and successful products for the customer.
+              Nolan Softworks is a local software company that serves the Kansas
+              City area. At Nolan Softworks, we design and develop websites,
+              desktop, web, and mobile applications. Our focus is to research a
+              customers' needs and requirements. The research that we do helps
+              us design great-looking and high-performing software that is
+              user-friendly for the consumer and its customers. We utilize the
+              findings from the research and design phases for the production of
+              specific products including materials, systems, and methods. This
+              research helps us produce successful software for our customers.
             </p>
           </div>
         </div>
